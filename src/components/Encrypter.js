@@ -19,7 +19,7 @@ const Encrypter = () => {
   };
 
   const handleDecrypt = () => {
-    const bytes = CryptoJS.AES.decrypt(encryptedText, secretKey);
+    const bytes = CryptoJS.AES.decrypt(text, secretKey);
     const originalText = bytes.toString(CryptoJS.enc.Utf8);
     setText("");
     setEncryptedText("");
